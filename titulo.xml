@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="absolutTitulo.MainPage">
+
+    <ScrollView>
+        <AbsoluteLayout>
+            <Image
+                Source="frame.png"
+                AbsoluteLayout.LayoutBounds="10,10"/>
+            <Image
+                Source="mexicoP.png"
+                AbsoluteLayout.LayoutBounds="130,100,200,200"/>
+            <Label
+                AbsoluteLayout.LayoutBounds="120,320"
+                HorizontalTextAlignment="Center"
+                Text="Título electrónico"
+                FontFamily="inclusive"
+                FontSize="30"
+                TextColor="black"/>
+            <Label
+                Text="Menos es mas"
+                FontFamily="barcode"
+                FontSize="50"
+                TextColor="black"
+                AbsoluteLayout.LayoutBounds="390,130"/>
+            <VerticalStackLayout
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                AbsoluteLayout.LayoutBounds="390,200"
+                Spacing="15">
+
+                <VerticalStackLayout
+                    WidthRequest="350"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+                    <Label
+                        Text="Folio"
+                        FontFamily="inclusive"
+                        FontSize="20"
+                        HorizontalTextAlignment="Center"
+                        BackgroundColor="#D2D2D2"
+                        TextColor="black"/>
+                    <Label
+                        HorizontalTextAlignment="Center"
+                        Text="jdu3dkk9d39dk39kd3"
+                        FontFamily="inclusive"
+                        FontSize="20"
+                        TextColor="black"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout
+                    WidthRequest="350"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+                    <Label
+                        Text="Fecha de expedición del título"
+                        FontFamily="inclusive"
+                        FontSize="20"
+                        HorizontalTextAlignment="Center"
+                        BackgroundColor="#D2D2D2"
+                        TextColor="black"/>
+                    <Label
+                        HorizontalTextAlignment="Center"
+                        Text="12 de julio del 2023"
+                        FontFamily="inclusive"
+                        FontSize="20"
+                        TextColor="black"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout
+                    WidthRequest="350"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+                    <Label
+                        Text="Entrada Federativa"
+                        FontFamily="inclusive"
+                        FontSize="20"
+                        HorizontalTextAlignment="Center"
+                        BackgroundColor="#D2D2D2"
+                        TextColor="black"/>
+                    <Label
+                        HorizontalTextAlignment="Center"
+                        Text="México"
+                        FontFamily="inclusive"
+                        FontSize="20"
+                        TextColor="black"/>
+                </VerticalStackLayout>              
+                
+            </VerticalStackLayout>
+
+            <Image
+                Source="profile.png"
+                WidthRequest="150"
+                AbsoluteLayout.LayoutBounds="150,430"/>
+            <VerticalStackLayout
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                AbsoluteLayout.LayoutBounds="350,420"
+                Spacing="15">
+
+                <VerticalStackLayout
+                    WidthRequest="460"
+                    Spacing="5"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+                    <Label
+                        HorizontalTextAlignment="Center"
+                        Text="Harvard 102"
+                        FontFamily="inclusive"
+                        FontSize="20"
+                        TextColor="black"/>
+                    <BoxView
+                        HeightRequest="2"
+                        Color="gray"/>
+                    <Label
+                        Text="Nombre de la institución"
+                        FontFamily="inclusive"
+                        FontSize="18"
+                        HorizontalTextAlignment="Center"
+                        TextColor="gray"/>
+
+                </VerticalStackLayout>
+                <VerticalStackLayout
+                    WidthRequest="460"
+                    Spacing="5"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+                    <Label
+                        HorizontalTextAlignment="Center"
+                        Text="Reagan"
+                        FontFamily="inclusive"
+                        FontSize="20"
+                        TextColor="black"/>
+                    <BoxView
+                        HeightRequest="2"
+                        Color="gray"/>
+                    <Label
+                        Text="Nombre del profesionista"
+                        FontFamily="inclusive"
+                        FontSize="18"
+                        HorizontalTextAlignment="Center"
+                        TextColor="gray"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout
+                    WidthRequest="460"
+                    Spacing="5"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+                    <Label
+                        HorizontalTextAlignment="Center"
+                        Text="GOMJ020712HMCDLSA1"
+                        FontFamily="inclusive"
+                        FontSize="20"
+                        TextColor="black"/>
+                    <BoxView
+                        HeightRequest="2"
+                        Color="gray"/>
+                    <Label
+                        Text="CURP del profesionista"
+                        FontFamily="inclusive"
+                        FontSize="18"
+                        HorizontalTextAlignment="Center"
+                        TextColor="gray"/>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                AbsoluteLayout.LayoutBounds="150,680"
+                Spacing="15">
+
+                <VerticalStackLayout
+                    WidthRequest="620"
+                    Spacing="5"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+                    <Label
+                        HorizontalTextAlignment="Center"
+                        Text="Ultrasecreto"
+                        FontFamily="inclusive"
+                        FontSize="20"
+                        TextColor="black"/>
+                    <BoxView
+                        HeightRequest="2"
+                        Color="gray"/>
+                    <Label
+                        Text="Cursó y acreditó"
+                        FontFamily="inclusive"
+                        FontSize="18"
+                        HorizontalTextAlignment="Center"
+                        TextColor="gray"/>
+
+                </VerticalStackLayout>
+                <HorizontalStackLayout
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Spacing="20">
+                    <VerticalStackLayout
+                    WidthRequest="300"
+                    Spacing="5"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+                        <Label
+                        HorizontalTextAlignment="Center"
+                        Text="12 de julio del 2017"
+                        FontFamily="inclusive"
+                        FontSize="20"
+                        TextColor="black"/>
+                        <BoxView
+                        HeightRequest="2"
+                        Color="gray"/>
+                        <Label
+                        Text="Fecha de Inicio"
+                        FontFamily="inclusive"
+                        FontSize="18"
+                        HorizontalTextAlignment="Center"
+                        TextColor="gray"/>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout
+                    WidthRequest="300"
+                    Spacing="5"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+                        <Label
+                        HorizontalTextAlignment="Center"
+                        Text="12 de julio del 2021"
+                        FontFamily="inclusive"
+                        FontSize="20"
+                        TextColor="black"/>
+                        <BoxView
+                        HeightRequest="2"
+                        Color="gray"/>
+                        <Label
+                        Text="Fecha de Terminación"
+                        FontFamily="inclusive"
+                        FontSize="18"
+                        HorizontalTextAlignment="Center"
+                        TextColor="gray"/>
+                    </VerticalStackLayout>
+
+                </HorizontalStackLayout>
+                <VerticalStackLayout
+                    WidthRequest="620"
+                    Spacing="5"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+                    <Label
+                        HorizontalTextAlignment="Center"
+                        Text="12 de julio del 2021"
+                        FontFamily="inclusive"
+                        FontSize="20"
+                        TextColor="black"/>
+                    <BoxView
+                        HeightRequest="2"
+                        Color="gray"/>
+                    <Label
+                        Text="Fecha de éxamen profesional"
+                        FontFamily="inclusive"
+                        FontSize="18"
+                        HorizontalTextAlignment="Center"
+                        TextColor="gray"/>
+                </VerticalStackLayout>
+                <HorizontalStackLayout
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Spacing="20">
+                    <VerticalStackLayout
+                    WidthRequest="300"
+                    Spacing="5"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+                        <Label
+                        HorizontalTextAlignment="Center"
+                        Text="12 de julio del 2017"
+                        FontFamily="inclusive"
+                        FontSize="20"
+                        TextColor="black"/>
+                        <BoxView
+                        HeightRequest="2"
+                        Color="gray"/>
+                        <Label
+                        Text="Tipo de autorización"
+                        FontFamily="inclusive"
+                        FontSize="18"
+                        HorizontalTextAlignment="Center"
+                        TextColor="gray"/>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout
+                    WidthRequest="300"
+                    Spacing="5"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+                        <Label
+                        HorizontalTextAlignment="Center"
+                        Text="12 de julio del 2021"
+                        FontFamily="inclusive"
+                        FontSize="20"
+                        TextColor="black"/>
+                        <BoxView
+                        HeightRequest="2"
+                        Color="gray"/>
+                        <Label
+                        Text="Número de reconocimiento "
+                        FontFamily="inclusive"
+                        FontSize="18"
+                        HorizontalTextAlignment="Center"
+                        TextColor="gray"/>
+                    </VerticalStackLayout>
+
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+            <Image
+                Source="firma.png"
+                WidthRequest="200"
+                AbsoluteLayout.LayoutBounds="500,1000"/>
+            <Image
+                WidthRequest="200"
+                Source="qr.png"
+                AbsoluteLayout.LayoutBounds="150,1000"/>
+
+        </AbsoluteLayout>
+    </ScrollView>
+
+</ContentPage>
