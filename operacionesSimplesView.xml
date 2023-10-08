@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp6.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <!--  
+            <Label
+                Text="Escribe un mensaje"
+                FontSize="20"
+                FontFamily="Poppins"
+                />
+            <Entry
+                x:Name="entryMessage"
+                Placeholder="Mensaje"
+                />
+            <Button
+                Text="Click me"
+                Clicked="btnMessage_Clicked"
+                SemanticProperties.Hint="this is..."
+                x:Name="btnMessage"/>
+            <Label
+                FontSize="20"
+                x:Name="lblMessage"
+                />
+            -->
+            <VerticalStackLayout
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Spacing="20">
+                <Label
+                Text="Numero 1"
+                FontAttributes="Bold"
+                FontSize="15"/>
+                <Entry
+                x:Name="txtNum1"
+                Placeholder="Numero"
+                />
+                <Label
+                Text="Numero 2"
+                FontAttributes="Bold"
+                FontSize="15"/>
+                <Entry
+                x:Name="txtNum2"
+                Placeholder="Numero"
+                />
+                <Button
+                    x:Name="btnSumar"
+                    Clicked="btnSumar_Clicked"
+                    TextColor="black"
+                    FontAttributes="Bold"
+                    Text="Sumar"/>
+                <Button
+                Clicked="btnLimpiar_Clicked"
+                x:Name="btnLimpiar"
+                TextColor="black"
+                FontAttributes="Bold"
+                BackgroundColor="#C14B49"
+                Text="Clear"/>
+                <Label
+                x:Name="lblResult"
+                Text="Sin resultados :)"
+                FontSize="20"/>
+            </VerticalStackLayout>
+
+
+            <VerticalStackLayout
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Spacing="20">
+                <Label
+                Text="Numero 1"
+                FontAttributes="Bold"
+                FontSize="15"/>
+                <Entry
+                x:Name="txtNum1Resta"
+                Placeholder="Numero"
+                />
+                <Label
+                Text="Numero 2"
+                FontAttributes="Bold"
+                FontSize="15"/>
+                <Entry
+                x:Name="txtNum2Resta"
+                Placeholder="Numero"
+                />
+                <Button
+                    x:Name="btnRestar"
+                    Clicked="btnRestar_Clicked"
+                    TextColor="black"
+                    FontAttributes="Bold"
+                    Text="Restar"/>
+                <Button
+                Clicked="btnLimpiarResta_Clicked"
+                x:Name="btnLimpiarResta"
+                TextColor="black"
+                FontAttributes="Bold"
+                BackgroundColor="#C14B49"
+                Text="Clear"/>
+                <Label
+                x:Name="lblResultResta"
+                Text="Sin resultados :)"
+                FontSize="20"/>
+            </VerticalStackLayout>
+
+
+
+            <VerticalStackLayout
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Spacing="20">
+                <Label
+                Text="Numero 1"
+                FontAttributes="Bold"
+                FontSize="15"/>
+                <Entry
+                x:Name="txtNum1M"
+                Placeholder="Numero"
+                />
+                <Label
+                Text="Numero 2"
+                FontAttributes="Bold"
+                FontSize="15"/>
+                <Entry
+                x:Name="txtNum2M"
+                Placeholder="Numero"
+                />
+                <Button
+                    x:Name="btnMultiplicar"
+                    Clicked="btnMultiplicar_Clicked"
+                    TextColor="black"
+                    FontAttributes="Bold"
+                    Text="Multiplicar"/>
+                <Button
+                Clicked="btnLimpiarMulti_Clicked"
+                x:Name="btnLimpiarMulti"
+                TextColor="black"
+                FontAttributes="Bold"
+                BackgroundColor="#C14B49"
+                Text="Clear"/>
+                <Label
+                x:Name="lblResultMulti"
+                Text="Sin resultados :)"
+                FontSize="20"/>
+            </VerticalStackLayout>
+
+
+            <VerticalStackLayout
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Spacing="20">
+                <Label
+                Text="Numero 1"
+                FontAttributes="Bold"
+                FontSize="15"/>
+                <Entry
+                x:Name="txtNum1D"
+                Placeholder="Numero"
+                />
+                <Label
+                Text="Numero 2"
+                FontAttributes="Bold"
+                FontSize="15"/>
+                <Entry
+                x:Name="txtNum2D"
+                Placeholder="Numero"
+                />
+                <Button
+                    x:Name="btnDividir"
+                    Clicked="btnDividir_Clicked"
+                    TextColor="black"
+                    FontAttributes="Bold"
+                    Text="Dividir"/>
+                <Button
+                Clicked="btnLimpiarDividir_Clicked"
+                x:Name="btnLimpiarDividir"
+                TextColor="black"
+                FontAttributes="Bold"
+                BackgroundColor="#C14B49"
+                Text="Clear"/>
+                <Label
+                x:Name="lblResultDividir"
+                Text="Sin resultados :)"
+                FontSize="20"/>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

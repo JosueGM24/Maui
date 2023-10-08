@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp7.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="65"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <VerticalStackLayout
+                VerticalOptions="Center"
+                Spacing="10">
+                <Frame
+                    BackgroundColor="white"
+                    CornerRadius="10"
+                    Padding="20">
+                    <Label
+                        TextColor="black"
+                        FontSize="20"
+                        Text="Factorial"/>
+                </Frame>
+                <Label
+                    Text="Numero:"/>
+                <Entry
+                    x:Name="numeroFactorial"
+                    Placeholder="Numero positivo"/>
+                <Button
+                    Text="Calcular"
+                    x:Name="btnCalcularFactorial"
+                    Clicked="btnCalcularFactorial_Clicked"/>
+                <Label
+                    Text="Sin resultado"
+                    x:Name="lblResultadoFactorial"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout
+                VerticalOptions="Center"
+                Spacing="10">
+                <Frame
+                    BackgroundColor="white"
+                    CornerRadius="10"
+                    Padding="20">
+                    <Label
+                        TextColor="black"
+                        FontSize="20"
+                        Text="Potenciación"/>
+                </Frame>
+                <Label
+                    Text="Numero:"/>
+                <Entry
+                    x:Name="numeroPotenciacion"
+                    Placeholder="Numero positivo"/>
+                <Label
+                    Text="Potencia:"/>
+                <Entry
+                    x:Name="numeroPotencia"
+                    Placeholder="Numero positivo"/>
+                <Button
+                    Text="Calcular"
+                    x:Name="btnCalcularPotencia"
+                    Clicked="btnCalcularPotencia_Clicked"/>
+                <Label
+                    Text="Sin resultado"
+                    x:Name="lblResultadoPotencia"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout
+                VerticalOptions="Center"
+                Spacing="10">
+                <Frame
+                    BackgroundColor="white"
+                    CornerRadius="10"
+                    Padding="20">
+                    <Label
+                        TextColor="black"
+                        FontSize="20"
+                        Text="Fibonacci"/>
+                </Frame>
+                <Label
+                    Text="Numero:"/>
+                <Entry
+                    x:Name="numeroFibonacci"
+                    Placeholder="Numero positivo"/>
+                <Button
+                    Text="Generar"
+                    x:Name="btnCalcularFibonacci"
+                    Clicked="btnCalcularFibonacci_Clicked"/>
+                <Label
+                    Text="Sin resultado"
+                    x:Name="lblResultadoFibonacci"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout
+                VerticalOptions="Center"
+                Spacing="10">
+                <Frame
+                    BackgroundColor="white"
+                    CornerRadius="10"
+                    Padding="20">
+                    <Label
+                        TextColor="black"
+                        FontSize="20"
+                        Text="Ecuación de 2do grado"/>
+                </Frame>
+                <HorizontalStackLayout
+                    HorizontalOptions="Center"
+                    Spacing="10">
+                <Label
+                    Padding="0,40"
+                    Text="A:"/>
+                <Entry
+                    x:Name="a"
+                    Placeholder="Numero positivo"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout
+                    HorizontalOptions="Center"
+                    Spacing="10">
+                    <Label
+                    Padding="0,40"
+                    Text="B:"/>
+                    <Entry
+                    x:Name="b"
+                    Placeholder="Numero positivo"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout
+                    HorizontalOptions="Center"
+                    Spacing="10">
+                    <Label
+                    Padding="0,40"
+                    Text="C:"/>
+                    <Entry
+                    x:Name="c"
+                    Placeholder="Numero positivo"/>
+                </HorizontalStackLayout>
+                <Button
+                    Text="Calcular"
+                    x:Name="btnCalcularEcuacion"
+                    Clicked="btnCalcularEcuacion_Clicked"/>
+                <Label
+                    Text="X1"
+                    x:Name="lblX1"/>
+                <Label
+                    Text="X2"
+                    x:Name="lblX2"/>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
