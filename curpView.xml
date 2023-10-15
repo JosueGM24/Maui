@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             WidthRequest="700"
+             HeightRequest="750"
+             BackgroundImageSource="backM.png"
+             x:Class="MauiApp8.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            VerticalOptions="Start"
+            HorizontalOptions="Center">
+            <Image Source="person.png" WidthRequest="100"/>
+            <HorizontalStackLayout
+                Spacing="20"
+                VerticalOptions = "Center"
+                HeightRequest="50"
+                HorizontalOptions="Center">
+                <Label
+                    WidthRequest = "200"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="StartAndExpand"
+                    Text="Nombre"/>
+                <Entry
+                    TextTransform="Uppercase"
+                    x:Name="nombrePersona"
+                    BackgroundColor = "#19191D"
+                    WidthRequest="200"
+                    Placeholder="José"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                Spacing="20"
+                VerticalOptions = "Center"
+                HorizontalOptions="Center">
+                <Label
+                    WidthRequest = "200"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="StartAndExpand"
+                    Text="Apellido Paterno"/>
+                <Entry
+                    TextTransform="Uppercase"
+                    x:Name="apellidoPaterno"
+                    BackgroundColor = "#19191D"
+                    WidthRequest="200"
+                    Placeholder="Pineda"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                Spacing="20"
+                VerticalOptions = "Center"
+                HorizontalOptions="Center">
+                <Label
+                    WidthRequest = "200"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="StartAndExpand"
+                    Text="Apellido Materno"/>
+                <Entry
+                    x:Name="apellidoMaterno"
+                    TextTransform="Uppercase"
+                    BackgroundColor = "#19191D"
+                    WidthRequest="200"
+                    Placeholder="Bautista"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                Spacing="20"
+                VerticalOptions = "Center"
+                HorizontalOptions="Center">
+                <Label
+                    WidthRequest = "200"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="StartAndExpand"
+                    Text="Entidad federativa"/>
+
+                <Picker
+                    BackgroundColor="#19191D"
+                    WidthRequest = "200"
+                    
+                    x:Name="entidad">
+                </Picker>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                Spacing="20"
+                VerticalOptions = "Center"
+                HorizontalOptions="Center">
+                <Label
+                    WidthRequest = "200"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="StartAndExpand"
+                    Text="Sexo"/>
+                <VerticalStackLayout
+                    Spacing="5"
+                    VerticalOptions="Center">
+                    <HorizontalStackLayout>
+                        <RadioButton Value="H" WidthRequest = "200" x:Name="hom" GroupName="sexo" Content="Hombre"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout
+                        VerticalOptions="Center">
+                        <RadioButton Value="M" WidthRequest = "200" x:Name="muj" GroupName="sexo" Content="Mujer"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                Spacing="20"
+                VerticalOptions = "Center"
+                HorizontalOptions="Center">
+                <Label
+                        WidthRequest = "200"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="StartAndExpand"
+                        Text="Fecha de nacimiento"/>
+                <DatePicker WidthRequest="200"
+                            x:Name="fechaNacimiento"/>
+                
+            </HorizontalStackLayout>
+            <Button Text="Generar" Clicked="BtnGenerarCurp_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
