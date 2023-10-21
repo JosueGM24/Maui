@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="temperatura.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Label
+                HorizontalOptions="Center"
+                FontFamily="Nighty DEMO"
+                Text="Convertidor"
+                FontSize="98"/>
+            <HorizontalStackLayout
+                Spacing="20"
+                VerticalOptions="Center"
+                HorizontalOptions="Center">
+                <Entry
+                    WidthRequest="100"
+                    x:Name="grades"
+                    
+                Placeholder="Grados"
+                FontSize="20"/>
+                <Label
+                    VerticalOptions="Center"
+                    Text="UNIDAD"/>
+                <Picker
+                    x:Name="unity"
+                    SelectedIndex="0"
+                    WidthRequest="200">
+                    <Picker.Items>
+                        <x:String>Celsius</x:String>
+                        <x:String>Farenheid</x:String>
+                        <x:String>Kelvin</x:String>
+                    </Picker.Items>
+                </Picker>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+    Spacing="20"
+    VerticalOptions="Center"
+    HorizontalOptions="Center">
+
+                <Label
+        VerticalOptions="Center"
+        Text="CONVERTIR A:"/>
+                <Picker
+                    x:Name="toConvert"
+        WidthRequest="200">
+                    <Picker.Items>
+                        <x:String>Celsius</x:String>
+                        <x:String>Farenheid</x:String>
+                        <x:String>Kelvin</x:String>
+                    </Picker.Items>
+                </Picker>
+            </HorizontalStackLayout>
+            <Button
+                x:Name="btnConvertir"
+                Clicked="BtnConvertir_Clicked"
+                Text="Convertir"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
