@@ -35,7 +35,7 @@ namespace usersNew
             {
                 foreach (Student std in list)
                 {
-                    if (std.id.Equals(id))
+                    if (Convert.ToInt32(std.id) == Convert.ToInt32(id))
                     {
                         list.Remove(std);
                         break;
