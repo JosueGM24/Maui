@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="usersNew.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="30"
+            HorizontalOptions="Center">
+            <HorizontalStackLayout
+                Spacing="20"
+                   >
+                <Label
+                 Text="Nombre:"
+                 SemanticProperties.HeadingLevel="Level1"
+                 FontSize="20"
+                 FontFamily="Poppins Light"  
+                 WidthRequest="190  "
+                 VerticalOptions="CenterAndExpand"
+                 HorizontalOptions="EndAndExpand" />
+
+                <Entry
+                    VerticalOptions="CenterAndExpand"
+                    x:Name="name"
+                    WidthRequest="200"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                Spacing="20">
+                <Label
+                    Text="Apellido paterno:"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="20"
+                    FontFamily="Poppins Light"  
+                    WidthRequest="190  "
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="EndAndExpand" />
+
+                <Entry
+                    VerticalOptions="CenterAndExpand"
+                     x:Name="paterno"
+                     WidthRequest="200"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                 Spacing="20">
+                <Label
+                    Text="Apellido materno:"
+                     SemanticProperties.HeadingLevel="Level1"
+                     FontSize="20"
+                     FontFamily="Poppins Light"  
+                     WidthRequest="190  "
+                     VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="EndAndExpand"  />   
+
+                <Entry
+                       VerticalOptions="CenterAndExpand"
+                       x:Name="materno"
+                       WidthRequest="200"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                 Spacing="20">
+                <Label
+                  Text="Grupo:"
+                     SemanticProperties.HeadingLevel="Level1"
+                     FontSize="20"
+                     FontFamily="Poppins Light"  
+                     WidthRequest="190  "
+                     VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="EndAndExpand"/>
+                <Picker
+                    x:Name="unity"
+                    SelectedIndex="0"
+                    WidthRequest="200"
+                    VerticalOptions="CenterAndExpand"
+                    FontFamily="Poppins Light">
+                    <Picker.Items >
+                        <x:String >ISC 401</x:String>
+                        <x:String>ISC 402</x:String>
+                        <x:String>ISC 701</x:String>
+                        <x:String>ISC 901</x:String>
+                        <x:String>ISC 1001</x:String>
+                    </Picker.Items>
+                </Picker>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                Spacing="20">
+            <Button
+                x:Name="Add"
+                Text="Add"
+                Clicked="agrega_ClickedAsync"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="Delete"
+                Text="Delete"
+                BackgroundColor="#EC593F"
+                TextColor="Black"
+                Clicked="Delete_Clicked"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="show"
+                Text="Show All"
+                Clicked="show_Clicked"
+                HorizontalOptions="Center" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+    
+
+</ContentPage>
